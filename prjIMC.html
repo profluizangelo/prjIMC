@@ -73,15 +73,15 @@
             const result = document.getElementById('resultado');
             if(imc < 18.5)
             {
-                console.log('Magreza | Obesidade: 0');
+                console.log('Magreza | Peso Normal');
                 result.style.color = 'yellow';
-                result.innerHTML = 'Magreza | Obesidade: 0';
+                result.innerHTML = 'Magreza | Normal: 0';
             }
             else if(imc >= 18.5 && imc < 25)
             {
-                console.log('Normal | Obesidade: 0');
+                console.log('Normal | Pré obeso');
                 result.style.color = 'green';
-                result.innerHTML = 'Normal | Obesidade: 0';
+                result.innerHTML = 'Normal | Pré obeso';
             }
             else if(imc >= 25 && imc < 30)
             {
@@ -91,9 +91,9 @@
             }
             else if(imc >= 30 && imc < 40)
             {
-                console.log('Obesidade | Obesidade: II');
+                console.log('Obesidade: I | Obesidade: II');
                 result.style.color = 'red';
-                result.innerHTML = 'Obesidade | Obesidade: II';
+                result.innerHTML = 'Obesidade: I | Obesidade: II';
             }
             else
             {
